@@ -1,0 +1,25 @@
+sort1 uses: Bubble sort
+
+How do you know?: It took almost 4s to sort reversed50000.txt
+
+sort2 uses: Merge sort
+
+How do you know?: It took only 1/2s to sort reversed50000.txt
+
+sort3 uses: Selection sort
+
+How do you know?: It took almost 2.165s to sort reversed50000.txt
+
+
+-- data --
+sorted5000 s1 = 0m0.019s;   s2 = 0m0.023s;  s3 = 0m0.039s
+sorted10000 s1 = 0m0.041s;  s2 = 0m0.045s;  s3 = 0m0.112s
+sorted50000 s1 = 0m0.507s;  s2 = 0m0.408s;  s3 = 0m2.159s
+
+random5000 s1 = 0m0.054s;   s2 = 0m0.023s;  s3 = 0m0.039s
+random10000 s1 = 0m0.204s;  s2 = 0m0.045s;  s3 = 0m0.110s
+random50000 s1 = 0m5.493s;  s2 = 0m0.433s;  s3 = 0m2.165s
+
+reversed5000 s1 = 0m0.064s;   s2 = 0m0.022s;  s3 = 0m0.039s
+reversed10000 s1 = 0m0.213s;  s2 = 0m0.042s;  s3 = 0m0.110s
+reversed50000 s1 = 0m4.955s;  s2 = 0m0.407s;  s3 = 0m2.165s
