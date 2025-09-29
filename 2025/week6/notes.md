@@ -214,8 +214,31 @@
 
 ## objects
 - python is oops language os yeah! OBjects.
+- we dont pass object to func but we call on that object like object.fucntion()
+- we use `class` keyword which also require initialization
+- defince function to the objects and have to have at list a one parameter.
+- `self` should be its first parameter tho.
+- Example:
+    ```python
+        class Student():
+            def __init__(self, name, id):
+                self.name = name
+                self.id = id
 
+            def changeId(self, id)
+                self.id = id
 
+            def print(self):
+                print("{} - {}".format(self.name, self.id))
+
+        # calling
+        jane = Student("Jane", 10)
+        jane.print()
+        jane.changeId(11)
+        jane.print()
+    ```
+## style
+- bro style is important here otherwise the program will not work.
 
 ## sys
 - command line inputs etc.
@@ -234,5 +257,5 @@
     - O(LogN) - utilizes more space but is faster as it is basically dividing the whole problem by half-and-half.
 
 ## Shorts Notes:
-
-GitDocs
+gitdoc test
+git doc test2
