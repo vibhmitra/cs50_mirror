@@ -256,6 +256,3 @@
     - O(n/2)
     - O(LogN) - utilizes more space but is faster as it is basically dividing the whole problem by half-and-half.
 
-## Shorts Notes:
-gitdoc test
-git doc test2
