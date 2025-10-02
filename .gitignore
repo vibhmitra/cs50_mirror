@@ -27,6 +27,7 @@ vendor/
 !*.sql
 !*.ts
 !*.txt
+!*.csv
 !Makefile
 
 # But do ignore these files from movies for now
