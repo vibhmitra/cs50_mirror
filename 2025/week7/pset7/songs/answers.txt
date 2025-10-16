@@ -1,0 +1,10 @@
+If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?
+My Ans:
+I will calculate the average energy, danceability, and valence of a user's past year's songs and will recommend more songs that come around this average value.
+For the Aura, I will categorize it based upon these average scores.
+
+Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener. What better ways of calculating this aura would you propose?
+My Ans:
+Yes, I think a simple average is not the most representative approach. It would make more sense if we get the play count of each song, and then base our recommendation of similar songs upon those values.
+We should also consider incorporating additional features like the key (the scale) of the songs and the tempo as well.
+
