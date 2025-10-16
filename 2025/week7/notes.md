@@ -7,13 +7,18 @@ Working with Data
 - key   |   value
 
 ## Relational Database
-- SQL: Database Specific Language, is kinda Descriptive Language
+- SQL: Database Specific Language, is kinda Descriptive Language, it queries databases
 - Follows CRUD -
     - Crete Data
     - Read Data
     - Update Data
     - Delete Data
-- Keywords: CREATE, INSERT, SELECT, etc.
+- Keywords: CREATE, INSERT, SELECT, UPDATE, DELETE, etc.
+- Some Other SQL: MySQL, phpMyadmin (GUI)
+- Create DB -> Create Tables -> Add Data (Rows & Column) -> Create Relationships
+- Each SQL table is capable of holding of purticular data type.
+- NULL, INTEGER, REAL (decimal, float), TEXT (char, varchar), BLOB
+- Primary Key - One Column that has all unique data
 
 ## sqlite3 and SQL
 - A implemetaion of SQL with core functions
@@ -96,3 +101,73 @@ Working with Data
 ## SQL Injection Attacks (new version: Prompt Injection)
 - always validate user's input first to avoid SQL injections
 
+----
+# Shorts
+
+- INSERT
+    ```SQL
+    INSERT INTO
+    <table>
+    (<columns>)
+    VALUES
+    (<values1>, <values2>)
+    ```
+    - Primary Key is mostly interger, and it is alaways a good practice to autoincrement it.
+
+- SELECT
+    - Extract data from table
+
+        ```SQL
+        SELECT
+        <columns>
+        FROM
+        <aable>
+        WHERE
+        <predicate>
+        ORDER BY
+        <column>
+        ```
+- SELECT (JOIN)
+    - Extract info from multiple tables
+        ```SQL
+        SELECT
+            <columns>
+        FROM
+            <table1> JOIN <table2>
+        ON
+            <predicate>
+
+        -- Example:
+        SELECT
+            users.fullname, moms.mother
+        FROM
+            users JOIN moms
+        ON
+            users.username = moms.username
+
+        ```
+- UPDATE
+    - Modify info in table
+        ```SQL
+        UPDATE
+            <table>
+        SET
+            <column> = <value>
+        WHERE
+            <predicate>
+
+        -- Example:
+        UPDATE
+            users
+        SET
+            password = 'yaayay'
+        WHERE
+            id = 10
+        ```
+- DELETE
+```SQL
+DELETE FROM
+    <table>
+WHERE
+    <predicate>
+```
