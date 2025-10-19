@@ -83,6 +83,55 @@ The markup language
 - static html is only composed of like html
 
 - dynamic website can responce dynamically.
-    - example of dynamic url: https://www.example.com/ **path?key=value&key=value**
+    - example of dynamic url: https://www.example.com/**path?key=value&key=value**
 
 - form validation using regular expressions (regex)
+
+## CSS (cascading style sheet)
+- just to style the web page elements
+- properties : colors + structure + font sizing + positioning
+- ways to apply props:
+    - type selectors
+    - class selectors
+    - ID selectors
+    - attribute selector
+- we can add it in head of html file.
+    - inside `<style> { all styles here } </style>` tag
+    - using link tag.
+- borwser adds its own default stylesheet aka useragent styles.
+
+- **Frameworks:** a prewritten lib / code.
+    - css framework: bootstrap css, tailwind css etc.
+        - helps you make websites faster.
+
+## JavaScript
+- adds functionality to web pages.
+- makes it dynamic.
+- javascript elements:
+    - conditionals
+        ```js
+        if (x > y)
+        {
+
+        }
+        else if (x < y)
+        {
+
+        }
+        else
+        {
+
+        }
+
+        ```
+    - var decleration
+        ```js
+        let foo = 8; // semicolon is not necessary tho
+        ```
+- adding to html using `<script>` tag - canbe inline of at head.
+- javascript is event-driven.
+    - so many events happen in browser so in this language.
+    - JS listen to this events.
+- JS will be executed at client side.
+
+- `let name = document.querySelector('#name').value;` : here documnet is like DOM
