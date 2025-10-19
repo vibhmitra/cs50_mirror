@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Background</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <button id="red">R</button>
+    <button id="green">G</button>
+    <button id="blue">B</button>
+    <button id="white">W</button>
+
+    <script>
+        let body = document.querySelector('body');
+
+        document.querySelector('#red').addEventListener('click', function(){
+            body.style.backgroundColor = '#FF0000';
+        });
+
+        document.querySelector('#green').addEventListener('click', function(){
+            body.style.backgroundColor = '#00FF00';
+        });
+
+        document.querySelector('#blue').addEventListener('click', function(){
+            body.style.backgroundColor = '#0000FF';
+        });
+
+        document.querySelector('#white').addEventListener('click', function(){
+            body.style.backgroundColor = '#FFFFFF';
+        });
+    </script>
+</body>
+</html>

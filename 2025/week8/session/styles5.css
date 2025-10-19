@@ -1,0 +1,42 @@
+.centered
+{
+    text-align: center;
+}
+
+.large
+{
+    font-size: large;
+}
+
+.medium
+{
+    font-size: medium;
+}
+
+.small
+{
+    font-size: small;
+}
+
+#github
+{
+    color: #FF0000;
+    text-decoration: none;
+}
+
+#github:hover {
+    text-decoration: underline;
+}
+
+
+#gitlab
+{
+    color: #00FF00;
+    text-decoration: none;
+}
+
+#gitlab:hover {
+    text-decoration: underline;
+}
+
+

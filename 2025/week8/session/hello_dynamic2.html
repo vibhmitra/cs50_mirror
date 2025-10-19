@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>
+            hello, dynamic 2!
+        </title>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            // After the DOM has been created add a listener and passing it annonymous function
+                document.querySelector('form').addEventListener('submit', function (event) {
+                    alert('hello, ' + document.querySelector('#name').value);
+                    event.preventDefault();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <form>
+            <input autocomplete="off" id="name" name="name" placeholder="Name" type="text">
+            <input type="Submit">
+        </form>
+
+
+    </body>
+</html>
