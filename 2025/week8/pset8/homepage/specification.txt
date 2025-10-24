@@ -1,0 +1,34 @@
+# HTML elements
+1. heading tags (<h3>): Will use to add heading to web page.
+2. anchor tags (<a href="">): use to add external or internal links. (can be linked to other pages or other webpages on internet)
+3. div tags (<div>): it basically use to divide and organize web elements and can be use as a wrapper holding other html elements. This is a block element.
+4. lists (ordered & unordered ): List on web pages. <ul> is used for unordered list. <ol> is used for ordered list.
+5. tables <table>: use to add table in web pages. I used it to show my contact info.
+6. img tags (<img>): used to add image on web pages. it basically accept a `src` to make the image visible.
+7. paragraph tag (<p>): basic paragraph tag in html.
+8. link (<links href="../bootstrap.min.css" rel="stylesheet>): use to link external stylesheets and fonts. usually placed in the <head> of the html
+9. bold <b>: use to bold out the text.
+10. span tag <span>: span tag is an inline html element used to apply classes to smaller chunks of text.
+11. ifranes: used to emmbed external websites on within the webpage. I used it to emmbed a video from youtube.
+12. em tag (<em>): to emphasize text. used in guestbook cards.
+
+---
+# Some thing about webpage
+
+I have 4 html, 1 css page
+    - index.html
+        - This page is just the homepage of my site
+        - this also features a image which is sourced from lorempicsum.
+    - aboutme.html
+        - This page has content about myself
+    - contact.html
+        - this page contains all contact info about me
+        - this uses tables
+    - guestbook.html
+        - this page is kind of a prototype guestbook, currently all data gets lost once you refresh the page.
+        - user can sign my guestbook and a small card will added at the end of the page with users's name, message and time.
+        - this is basically a form but instead of triggering it via event, I am relying on simple function call.
+    - styles.css
+        - this contains some styling components as most of the site uses bootstrap
+        - some classes of bootstrap is overriden using the !important property of css.
+

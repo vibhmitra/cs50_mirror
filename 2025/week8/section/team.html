@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+    <style>
+        header {
+            background-color: #ddd;
+            color: #000;
+
+        }
+
+        h1 {
+            color: green;
+            text-decoration: underline wavy black;
+            /* text-decoration-style: wavy; */
+        }
+
+        table {
+            border: 2px solid black;
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+        }
+
+        th, tr, td {
+            border: 1pt solid black;
+            text-align: center;
+        }
+
+        .team1 {
+            background-color: #ff0000;
+        }
+
+        .team2 {
+            background-color: #00ddff;
+        }
+
+        #score1 {
+            background-color: #ADDBE6;
+        }
+        #score2 {
+            background-color: #DDDB46;
+        }
+
+        footer {
+            font-size: x-small;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Team Scores
+    </header>
+    <h1 style="text-align: center;">
+        Team 1 vs. Team 2
+    </h1>
+    <p id="feedback"></p>
+    <table>
+        <thead>
+            <th class="team1">Team 1</th>
+            <th class="team2">Team 2</th>
+        </thead>
+
+        <tr>
+            <td id="score1">0</td>
+            <td id="score2">0</td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" id="add1">+1</button>
+            </td>
+            <td>
+                <button type="button" id="add2">+1</button>
+            </td>
+        </tr>
+    </table>
+
+    <footer>
+        &copy 2025 Made by Vibhanshu
+    </footer>
+
+    <script>
+        let team1 = 0;
+        let team2 = 0;
+
+        document.querySelector('#add1').onclick = function() {
+            team1++;
+            document.querySelector('#score1').innerHTML = team1;
+
+            if (team1 == 5) {
+                document.querySelector('#feedback').innerHTML = 'Team 1 Won! by <b>' + (team1 - team2) + '</b> points'
+                document.getElementById('score1').style.backgroundColor = '#77AB59';
+                document.getElementById('add1').disabled = true;
+                document.getElementById('add2').disabled = true;
+            }
+        }
+
+        document.querySelector('#add2').onclick = function() {
+            team2++;
+            document.querySelector('#score2').innerHTML = team2;
+
+            if (team2 == 5) {
+                document.querySelector('#feedback').innerHTML = 'Team 2 Won! by <b>' + (team2 - team1) + '</b> points'
+                document.getElementById('score2').style.backgroundColor = '#77AB59';
+                document.getElementById('add1').disabled = true;
+                document.getElementById('add2').disabled = true;
+            }
+        }
+
+
+    </script>
+</body>
+</html>

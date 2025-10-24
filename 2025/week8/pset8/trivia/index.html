@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function() {
+                // After the DOM has been created add a listener and passing it annonymous function
+
+                let button1 = document.getElementById('opt1');
+                let button2 = document.getElementById('opt2');
+                let button3 = document.getElementById('opt3');
+                let button4 = document.getElementById('opt4');
+
+                button1.onclick = function() {
+                    button1.style.backgroundColor = 'red';
+                    document.getElementById('response_message').innerHTML = 'Incorrect!'
+                }
+
+                button2.onclick = function() {
+                    button2.style.backgroundColor = 'green';
+                    document.getElementById('response_message').innerHTML = 'Correct!'
+                }
+
+                button3.onclick = function() {
+                    button3.style.backgroundColor = 'red';
+                    document.getElementById('response_message').innerHTML = 'Incorrect!'
+                }
+
+                button4.onclick = function() {
+                    button4.style.backgroundColor = 'red';
+                    document.getElementById('response_message').innerHTML = 'Incorrect!'
+                }
+            });
+
+            // Part 2
+            function answer() {
+                let ans = document.querySelector('#answer').value;
+                ans = ans.toLowerCase();
+                console.log(ans)
+                if (ans == 'artificial intelligence') {
+                    document.getElementById('answer').style.backgroundColor = 'green';
+                    document.getElementById('response_message2').innerHTML = 'Correct!'
+                } else {
+                    document.getElementById('answer').style.backgroundColor = 'red';
+                    document.getElementById('response_message2').innerHTML = 'Incorrect!'
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>Which programming language is most similar to machine language? </h3>
+                <p id="response_message"></p>
+                <button type="button" id="opt1">High-level Language</button>
+                <button type="button" id="opt2">Assembly Language</button>
+                <button type="button" id="opt3">Markup Language</button>
+                <button type="button" id="opt4">Scripting Language</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>What is full form of AI?</h3>
+                <p id="response_message2"></p>
+                <input type="text" id="answer">
+                <button onclick="answer()">Check Answers!</button>
+            </div>
+        </div>
+    </body>
+
+</html>
