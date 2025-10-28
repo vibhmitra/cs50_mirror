@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<!-- old -->
+<!-- <ul>
+        {% for show in show %}
+            <li>{{ show.title }} ({{ show.year }})</li>
+        {% endfor %}
+    </ul> -->
+
+    {% for show in shows %}
+        <li>{{ show.title }}</li>
+    {% endfor %}
+{% endblock %}

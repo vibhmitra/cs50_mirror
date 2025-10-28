@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <h1>Cart:</h1>
+    <sub><a href="/">Add More</a></sub>
+    <ol>
+        {% for book in books %}
+            <li>{{ book.title }}</li>
+        {% endfor %}
+    </ol>
+    <sub><a href="/logout">Clear Cart</a></sub>
+
+
+{% endblock %}
