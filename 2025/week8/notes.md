@@ -35,10 +35,10 @@ The markup language
     - prefixed automatically in browsers http://<domain_name>/
     - https://www.example.com/folder\
         - https:// - this is just protocol
-        - host name: wwww
+        - host name: www
         - domain name: example.com
         - TLD: (top level domains) - .com, .gov, .jp, .tv
-    - in this protocol: there can requests like:
+    - in this protocol: there are requests like:
         - GET - get me smth
         - POST - send smth
         - eg:
