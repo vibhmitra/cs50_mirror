@@ -19,7 +19,7 @@ The markup language
     - so now ip will look like - 1.2.3.4:80 that means its going to be a web-server
     - source port and destination port
 - both TCP and IP together allows us to uniquely address computers on internet and gauranteed delivery of data.
-- **DNS (Domain name servers)**
+- **DNS (Domain name System) servers**
     - translates domain name into ip address so we don't have to remember those weird numbers in ip.
     - it contains domain_name along with its corresponding ip.
     - if first dns server didn't find one in its list, then it will asks second dns server to get the ip.
