@@ -88,7 +88,7 @@
   "git.autofetch": true,
   "git.decorations.enabled": false,
   "git.terminalAuthentication": true,
-  "gitdoc.autoPull": "onCommit",
+  "gitdoc.autoPull": "onPush",
   "gitdoc.commitMessageFormat": "😐 ccc, LLL d, kkkk, h:mm a ZZ",
   "gitdoc.commitValidationLevel": "none",
   "gitdoc.enabled": true,
@@ -218,10 +218,12 @@
   "workbench.tips.enabled": false,
   "workbench.welcomePage.walkthroughs.openOnInstall": false,
   "gitdoc.ai.useEmojis": false,
-  "gitdoc.autoPullDelay": 20000,
-  "gitdoc.autoPushDelay": 20000,
+  "gitdoc.autoPullDelay": 10000,
+  "gitdoc.autoPushDelay": 10000,
   "files.associations": {
     "dictionary.h": "c"
   },
-  "gitdoc.autoCommitDelay": 20000
+  "gitdoc.autoCommitDelay": 10000,
+  "gitdoc.autoPush": "onCommit",
+  "gitdoc.ai.enabled": false
 }
